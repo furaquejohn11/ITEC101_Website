@@ -3,15 +3,32 @@
     padding: 0;
     font-family: 'poppins', sans-serif;
 }
+html {
+    scroll-behavior: smooth;
+}
 .main-div{
     background-image: url(img/Fam_2.jpg);
 }
 .webname{
-    background-image: url(img/plexus.gif);
+    background-image: url(img/Background.png);
 }
-.main-div, .webname {
-    background-size: 100% 100%;
-    background-repeat: no-repeat;   
+.service-div{
+    background-image: url(img/bg2.png);
+}
+.message-div{
+    background-image: url(img/bg3.png);
+}
+.menu{
+    height: 20px;
+    background-color: transparent;
+    text-align: right;
+    padding-right: 20px;
+    position: sticky;
+    top: 0px;
+}
+.main-div, .webname, .service-div, .message-div {
+    background-size: cover;  
+    background-repeat: no-repeat;  
     height: 550px;
 }
 .main-div h1{
@@ -52,9 +69,10 @@
     display: flex;
 }
 .webname img{
-    width: 50%;
+    object-fit: cover;
+    width: 400px;
     padding-top: 100px;
-    height: 50%;
+    height: 200px;
 }
 .webname h1{
     padding-top: 200px;
@@ -73,6 +91,62 @@
     background-color: rgb(19, 15, 15);
     margin-left: 300px;
 }
+.message-div h1 {
+    color: white;
+    text-align: center;
+    padding-top: 50px;
+}
+.user-input{
+    display: flex;
+    padding-top: 75px;
+}
+.user-input ,.subject, .msg{
+    margin: auto;
+    padding-right: 150px;
+    padding-left: 150px;
+    padding-bottom: 5px;
+}
+.service-div img {
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+}
+.message-div ::-webkit-input-placeholder {
+    color: black;
+}
+.message-div input, .message-div textarea{
+    width: 100%;
+    height: 40px;
+    background-color: rgba(255, 255, 255, .5);
+    color: black;   
+}
+.message-div textarea{
+    height: 70px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media
 (prefers-reduced-motion: no-preference) {
