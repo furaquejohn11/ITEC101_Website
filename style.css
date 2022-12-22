@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins', sans-serif;
+}
+.main-div{
+    background-image: url(img/Fam_2.jpg);
+}
+.webname{
+    background-image: url(img/plexus.gif);
+}
+.main-div, .webname {
+    background-size: 100% 100%;
+    background-repeat: no-repeat;   
+    height: 550px;
+}
+.main-div h1{
+    padding-top: 350px;
+    margin-left: 50px;
+    font-size: 70px;
+    color: white;
+}
+.main-div p{
+    margin-left: 50px;
+    color: white;
+}
+.nav-bar {
+    width: 100%;
+    height: 50px;
+    background-color: grey;
+    position: sticky;
+    top: 0px;
+    display: flex;
+    justify-content: center;
+    
+}
+.nav-bar a{
+    float: left;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family:  Helvetica,Arial, sans-serif;
+    font-size: 20px;
+}
+.nav-bar a:hover{
+    color: brown;
+}
+
+.webname{
+    display: flex;
+}
+.webname img{
+    width: 50%;
+    padding-top: 100px;
+    height: 50%;
+}
+.webname h1{
+    padding-top: 200px;
+    padding-left: 40px;
+    font-size: 40px;
+    color: white;
+}
+.webname p{
+    padding-left: 40px;
+    color: white;
+}
+.webname button{
+    margin-top: 30px;
+    font-size: 20px;
+    color: white;
+    background-color: rgb(19, 15, 15);
+    margin-left: 300px;
+}
+
+@media
+(prefers-reduced-motion: no-preference) {
+    html {
+      scroll-behavior: smooth;
+    }
+  }
