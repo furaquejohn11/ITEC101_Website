@@ -2,13 +2,60 @@
     margin: 0;
     padding: 0;
     font-family: 'poppins', sans-serif;
+    color: white;
 }
 html {
     scroll-behavior: smooth;
 }
-.main-div{
+.main-container{
+    position: block;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    
+}
+.main-con-menu button{
+    background-color: transparent;
+    border: none;
+    padding-right: 10px;
+}
+.main-con-content {
+    width: 100% ;
+}
+.main-container{
     background-image: url(img/Fam_2.jpg);
 }
+.main-con-sidebar {
+    text-align: center;
+    display: none;
+    height: auto; 
+    width: 500px; 
+    background-color: rgba(0,0,0,0.9);
+    z-index: 1;
+    
+}
+.main-con-sidebar button {
+    width: 80%;
+    color: black;
+}
+.main-con-sidebar button {
+    height: 50px;
+    border: none;
+    font-size: 15px;
+    background-color: transparent;
+    color: white;
+}
+.main-con-sidebar button:hover {
+    background-color: #51280a;
+}
+
+
+
+
+
+
+
+
 .webname{
     background-image: url(img/Background.png);
 }
@@ -18,6 +65,13 @@ html {
 .message-div{
     background-image: url(img/bg3.png);
 }
+.main-con-menu{
+    height: 20px;
+    background-color: transparent;
+    text-align: right;
+    position: sticky;
+    top: 0px;
+}
 .menu{
     height: 20px;
     background-color: transparent;
@@ -25,36 +79,41 @@ html {
     padding-right: 20px;
     position: sticky;
     top: 0px;
+    margin-top: -80px;
 }
-.main-div, .webname, .service-div, .message-div {
+.main-div, .webname, .service-div, .message-div, .main-container {
     background-size: cover;  
     background-repeat: no-repeat;  
-    height: 550px;
+    height: 100vh;
+    width: 100%;
 }
-.main-div h1{
-    padding-top: 350px;
+.main-div h1, .main-con-div h1{
+    padding-top: 60vh;
     margin-left: 50px;
     font-size: 70px;
     color: white;
 }
-.main-div p{
+.main-div p, .main-con-div p{
     margin-left: 50px;
     color: white;
 }
 .nav-bar {
     width: 100%;
     height: 50px;
-    background-color: grey;
+    background-color: #51280a;
     position: sticky;
     top: 0px;
     display: flex;
     justify-content: center;
+    margin-top: 1px;
+    margin-bottom: 1px;
+    
     
 }
 .nav-bar a{
     float: left;
     display: block;
-    color: black;
+    color: white;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -67,6 +126,7 @@ html {
 
 .webname{
     display: flex;
+    z-index: 1;
 }
 .webname img{
     object-fit: cover;
@@ -106,23 +166,32 @@ html {
     padding-left: 150px;
     padding-bottom: 5px;
 }
+.service-div h1, .service-div p {
+    color: white;
+    padding-left: 20px;
+}
 .service-div img {
     margin-right: auto;
     margin-left: auto;
     display: block;
 }
 .message-div ::-webkit-input-placeholder {
-    color: black;
+    color: white;
+    font-weight: lighter;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 .message-div input, .message-div textarea{
     width: 100%;
     height: 40px;
-    background-color: rgba(255, 255, 255, .5);
+    background-color: rgba(166, 161, 161, .2);
     color: black;   
+    border: none;
+    margin: 2px;
 }
 .message-div textarea{
     height: 70px;
 }
+
 
 
 

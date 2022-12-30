@@ -10,33 +10,55 @@
     <script src="main.js"></script>
 </head>
 <body>
-    <div class="main-div">
-        <div class="menu">
-            <a href="">Menu</a>
+    <div class="main-container">
+        <div class="main-con-content">
+            <div class="main-con-menu">
+                <button onclick="btnSideBar()" style="color: black;">Menu</button>
+            </div>
+            <div class="main-con-div">
+                <h1>Lorem</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae, soluta!</p>
+            </div>
+            
         </div>
-        <h1>Lorem</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae, soluta!</p>
 
+        <div class="main-con-sidebar" id="main-con-sidebar">
+            <div>
+                <h3 style="text-align: left; padding-bottom: 20px;">Menu</h3>
+            </div>
+            <button onclick='window.location ="#home";'>Home</button>
+            <button onclick='window.location ="#service";'>Services</button>
+            <button>Profile</button>
+            <button onclick='window.location ="#message";'>Message</button>
+        </div>
     </div>
-    <!--<div class="nav-bar">
+
+    <div class="nav-bar">
         <a href="#home">Home</a>
-        <a href="#blu">Services</a>
-        <a href="">Profile</a>
-        <a href="">About Us</a>
-    </div>
--->
+        <a href="#service">Services</a>
+        <a href="#home">Profile</a>
+        <a href="#message">Message</a>
+</div>
+
+        
     <div class="webname" id="home">
-       <img src="img/shrekxmas.jpg" alt="">
-       <aside>
-            <h1>Happy Holidays</h1>
-            <p>Potangina nyo</p>
-            <button>Pakyu</button>
-       </aside>
+
+        <img src="img/shrekxmas.jpg" alt="">
+        <aside>
+                <h1>Happy Holidays</h1>
+                <p>Potangina nyo</p>
+                <button>Pakyu</button>
+        </aside>
     </div>
-    <div class="service-div">
+    <div class="service-div" id="service">
+        <h1>WHAT'S ON (NAME NG WEBSITE)</h1>
+        <p>Pili kayo or isip kayo bago<br>
+            Choose which site you want to go.<br>
+            You have bunch of services to choose from. <br>
+            We offer lots of companies (brands) from wide variety of services.</p>
         <img src="img/dancing.gif" alt="">
     </div>
-    <div class="message-div">
+    <div class="message-div" id="message">
         <h1>Send Me A Feedback!</h1>
         <div class="user-input">
             <input type="text" placeholder="Enter Name:">
@@ -49,5 +71,11 @@
             <textarea name="" id="" cols="30" rows="10" placeholder="Message:"></textarea>
         </div>
     </div>
+
+
+    
+
+
+    
 </body>
 </html>
