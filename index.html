@@ -10,53 +10,83 @@
     <script src="main.js"></script>
 </head>
 <body>
-    <div class="main-container">
+    <div class="main-container" id="main">
         <div class="main-con-content">
             <div class="main-con-menu">
                 <button onclick="btnSideBar()" style="color: black;">Menu</button>
             </div>
             <div class="main-con-div">
-                <h1>Lorem</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae, soluta!</p>
+                <h1>ORA HOMES</h1>
+            <p>Turn Your Home Into Your Haven - Find Everything You Need Here!</p>
             </div>
             
         </div>
 
         <div class="main-con-sidebar" id="main-con-sidebar">
             <div>
-                <h3 style="text-align: left; padding-bottom: 20px;">Menu</h3>
+                <h3 style="text-align: left; padding-bottom: 20px;">  </h3>
             </div>
-            <button onclick='window.location ="#home";'>Home</button>
+            <button onclick='window.location ="#main";'>Home</button>
+            <button onclick='window.location ="#home";'>Mission</button>
             <button onclick='window.location ="#service";'>Services</button>
-            <button>Profile</button>
             <button onclick='window.location ="#message";'>Message</button>
         </div>
     </div>
 
     <div class="nav-bar">
-        <a href="#home">Home</a>
+        <a href="#main">Home</a>
+        <a href="#home">Mission</a>
         <a href="#service">Services</a>
-        <a href="#home">Profile</a>
         <a href="#message">Message</a>
 </div>
 
         
     <div class="webname" id="home">
-
-        <img src="img/shrekxmas.jpg" alt="">
-        <aside>
-                <h1>Happy Holidays</h1>
-                <p>Potangina nyo</p>
-                <button>Pakyu</button>
-        </aside>
+        
+            <h1>WHAT'S ON?</h1>
+            <p>We offer services where you can easily find what's <br>suitable for you and your family. <br>
+            Many companies (brands) are available from the <br>services you can choose from.</p>
+        
     </div>
     <div class="service-div" id="service">
-        <h1>WHAT'S ON (NAME NG WEBSITE)</h1>
-        <p>Pili kayo or isip kayo bago<br>
-            Choose which site you want to go.<br>
-            You have bunch of services to choose from. <br>
-            We offer lots of companies (brands) from wide variety of services.</p>
-        <img src="img/dancing.gif" alt="">
+        <h1 style="text-align: center; color: white; padding-top: 10px;">Services</h1>
+        <!-- <img src="img/dancing.gif" alt="" onclick="btnNext()">
+        <div style="text-align: center;">
+            <button style="color: black; font-size: 30px;" id="asd">ONLINE SHOP</button>
+            <button style="color: black; font-size: 30px;" id="a">TRANSPO</button>  
+            <button style="color: black; font-size: 30px;" id="qwe">LAZADA</button>
+            <button style="color: black; font-size: 30px;" id="q">GRAB</button>
+            <button style="color: black; font-size: 30px;" onclick="btnNext()">NEXT</button>
+            <a href="https://www.youtube.com" target="_blank">click me</a>
+        </div>
+
+    -->
+        <div style="display: flex; align-items: center; justify-content: center; padding-top: 20vh;">
+            <div class="slider">
+                <span style="--i:1;" onclick="btnShop()"> <img src="img/aliexpress.jfif" onclick="btnShop()" id="shop"></span>
+                <span style="--i:2;" onclick="btnTranspo()"> <img src="img/car.jfif" id="transpo" onclick="btnTranspo()"></span>
+                <span style="--i:3;" onclick="btnPhoto()"> <img src="img/photography.jfif" id="photo" onclick="btnPhoto()"></span>
+
+
+                <span style="--i:4;"> <img src="img/back.jpg" id="back1" onclick="btnBack1()"></span>
+                <span style="--i:5;"> <img src="img/lazada.jpg" id="shop1" onclick="location.href = 'https://lazada.com.ph';"></span>
+                <span style="--i:6;"> <img src="img/shopee.png" id="shop2"  onclick="location.href = 'https://shopee.com/';"></span>
+                <span style="--i:7;"> <img src="img/carousell.png" id="shop3"  onclick="location.href = 'https://www.carousell.ph/';"></span>
+               
+                <span style="--i:8;"> <img src="img/back.jpg" id="back2" onclick="btnBack2()"></span>
+                <span style="--i:9;"> <img src="img/ferrari.png" id="transpo1" onclick="location.href = 'https://www.ferrari.com/en-PH';"></span>
+                <span style="--i:10;"> <img src="img/honda.png" id="transpo2" onclick="location.href = 'https://www.hondaph.com/';"></span>
+                <span style="--i:11;"> <img src="img/ford.jpg" id="transpo3" onclick="location.href = 'https://www.ford.com.ph/';"></span>
+
+                <span style="--i:12;"> <img src="img/back.jpg" id="back3" onclick="btnBack3()"></span>
+                <span style="--i:13;"> <img src="img/vimeo.png" id="photo1" onclick="location.href = 'https://vimeo.com/';"></span>
+                <span style="--i:14;"> <img src="img/yt.webp" id="photo2" onclick="location.href = 'https://youtube.com';"></span>
+                <span style="--i:15;"> <img src="img/metacafe.png" id="photo3"  onclick="location.href = 'https://videoshub.com';"></span>
+                
+            </div>
+        
+        </div>
+        
     </div>
     <div class="message-div" id="message">
         <h1>Send Me A Feedback!</h1>
@@ -67,9 +97,11 @@
         <div class="subject">
             <input type="text" placeholder="Subject">
         </div>
-        <div class="msg">
+        <div class="msg" style="text-align: right;">
             <textarea name="" id="" cols="30" rows="10" placeholder="Message:"></textarea>
+            <button style="color: black; text-align: center; width: 70px; background-color: rgba(166, 161, 161, 0.5); border: none;">Send</button>
         </div>
+        
     </div>
 
 
